@@ -38,5 +38,5 @@ const takeUntil = function (array, callback) {
 const data1 = [1, 2, -5, 2, 10];
 const results = takeUntil(data1, x => x < 0);
 console.log(results);
-console.log(assertArraysEqual(results,[1,2]))
+assertArraysEqual(results,[1,2])
 
