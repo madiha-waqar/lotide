@@ -18,6 +18,7 @@ const assertArraysEqual = function(array1, array2) {
     console.log(`🛑🛑🛑 Assertion Failed: ${array1}  !== ${array2}`); 
   }
 };
+
 const takeUntil = function (array, callback) {
   let results = [];
   for (const item of array) {
@@ -30,13 +31,11 @@ const takeUntil = function (array, callback) {
     }
   }
   return results;
-}
+};
 
 //The function will return a "slice of the array with elements taken from the beginning." 
 //It should keep going until the callback/predicate returns a truthy value.
 
 const data1 = [1, 2, -5, 2, 10];
 const results = takeUntil(data1, x => x < 0);
-console.log(results);
-console.log(assertArraysEqual(results,[1,2]))
-
+assertArraysEqual(results,[1,2]);
