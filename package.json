@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@mail2madihawaqar/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertEqual.js",
+  "description":  "a clone version of lodash library created as 4 week project at Lighthouse Labs",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/madiha-waqar/lotide.git"
   },
-  "author": "",
+  "author":  {"name": "Madiha Waqar"},
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/madiha-waqar/lotide/issues"
