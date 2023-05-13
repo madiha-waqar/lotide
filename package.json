@@ -1,6 +1,6 @@
 {
   "name": "@mail2madihawaqar/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description":  "a clone version of lodash library created as 4 week project at Lighthouse Labs",
   "main": "index.js",
   "directories": {
