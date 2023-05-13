@@ -10,14 +10,7 @@ const eqArrays = function(array1, array2) {
     return true;
   }
 };
-
-const assertArraysEqual = function(array1, array2) {
-  if (eqArrays(array1, array2)) {
-    console.log(`✅✅✅ Assertion Passed: ${array1}  === ${array2}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${array1}  !== ${array2}`);
-  }
-};
+const assertArraysEqual = require('./assertArraysEqual');
 
 const without = function(source, itemsToRemove) {
   let result = [];
@@ -28,6 +21,8 @@ const without = function(source, itemsToRemove) {
   }
   return result;
 };
+
+module.export = without;
 
 assertArraysEqual(without(["a", "b", "c"], ["c"]), ["a", "b"]);
 assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);

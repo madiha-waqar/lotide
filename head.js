@@ -18,4 +18,4 @@ const head = function(array) {
 // assertEqual(head([""],""));
 // assertEqual(head(["'5'"],"5"));
 
-module.exports = head
+module.exports = head;

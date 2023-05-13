@@ -1,7 +1,4 @@
-const assertEqual = function (actual, expected) {
-  actual === expected ? console.log("✅✅✅" + "Assertion Passed: " + `${actual}` + " === " + `${expected}`) :
-    console.log("🛑🛑🛑" + "Assertion Failed: " + `${actual}` + " !=== " + `${expected}`);
-};
+const assertEqual = require('./assertEqual');
 
 const findKey = function (obj, callback) {
   const objKeys = Object.keys(obj);
@@ -12,11 +9,13 @@ const findKey = function (obj, callback) {
   }
 };
 
+module.exports = findKey;
+
 assertEqual(findKey({
-  'Fiat': {model:100, color:"white"},
-  'Lexus': {model:250, color:"red"},
-  'Toyota': {model:500, color:"blue"},
-  'Ford': {model:1000, color:"black"},
+  'Fiat': { model: 100, color: "white" },
+  'Lexus': { model: 250, color: "red" },
+  'Toyota': { model: 500, color: "blue" },
+  'Ford': { model: 1000, color: "black" },
 }, car => car.model === 1000), 'Ford');
 
 assertEqual(findKey({
